@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.connection.driver_class">org.sqlite.JDBC</property>
+        <property name="hibernate.connection.url">jdbc:sqlite:database</property>
+        <property name="dialect">org.hibernate.dialect.SQLiteDialect</property>
+        <property name="hibernate.hbm2ddl.auto">create-drop</property>
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.format_sql">true</property>
+
+        <mapping class="com.tropa.entities.Aluno" />
+        <mapping class="com.tropa.entities.Atividade" />
+        <mapping class="com.tropa.entities.Funcionario" />
+        <mapping class="com.tropa.entities.Mensalidade" />
+        <mapping class="com.tropa.entities.Monitor" />
+        <mapping class="com.tropa.entities.Professor" />
+        <mapping class="com.tropa.entities.Responsavel" />
+        <mapping class="com.tropa.entities.Secretaria" />
+        <mapping class="com.tropa.entities.Turma" />
+    </session-factory>
+</hibernate-configuration>
